@@ -2,9 +2,10 @@ function jumlahDeretGeometri(a, r, n) {
   let jumlah = 0;
   let suku = a;
 
-  for (let i = 0; i < n; i++) {
-    jumlah += suku;
-    suku *= r;
+  for (let i = 0; i <= n; i++) {
+    let geometri = a * Math.pow(r, i - 1);
+    console.log("Suku " + i + " adalah = ", geometri);
+    jumlah += geometri;
   }
 
   return jumlah;
